@@ -6,7 +6,106 @@
     <title>mon site de test</title>
 </head>
 <body>
-    welcome to dominica
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de moi - Bonnie Koddy</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles and animations not covered by Tailwind */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Keyframe Animations */
+        @keyframes slideInTop {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Apply animations */
+        .animate-slideInTop {
+            animation: slideInTop 1s ease-out forwards;
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        .delay-500 {
+            animation-delay: 0.5s;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-100 antialiased text-gray-800">
+    <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-12 text-center shadow-lg rounded-b-lg">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl font-extrabold mb-2 animate-slideInTop">Bonnie Koddy</h1>
+            <h2 class="text-xl font-light opacity-0 animate-fadeIn delay-500">Stagiaire en développement web mobile</h2>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="about" class="bg-white p-8 rounded-xl shadow-lg mb-8 transition-all duration-300 ease-in-out hover:shadow-xl">
+            <div class="profile-image-container text-center mb-8">
+                <!-- Placeholder image: Replace with your actual profile picture URL -->
+                <img src="https://placehold.co/160x160/60A5FA/FFFFFF?text=Bonnie" alt="Photo de profil de Bonnie Koddy" class="profile-image w-40 h-40 rounded-full object-cover border-4 border-blue-400 shadow-md mx-auto transform transition-transform duration-300 hover:scale-105 hover:rotate-3">
+            </div>
+            <h3 class="text-3xl font-bold text-center mb-6 text-blue-700 border-b-2 border-blue-200 pb-4">Bonjour !</h3>
+            <p class="text-lg leading-relaxed mb-4">Je m'appelle **Bonnie Koddy**, et je suis un stagiaire **enthousiaste et motivé** en développement web mobile. Je suis passionné par **la création d'applications et de sites web responsives** et je suis toujours avide d'apprendre et de relever de nouveaux défis.</p>
+            <p class="text-lg leading-relaxed mb-4">Au cours de mon stage chez **[Nom de l'entreprise où vous faites votre stage]**, j'ai eu l'opportunité de **travailler sur des projets de développement mobile, d'optimiser l'expérience utilisateur et de collaborer avec des équipes expérimentées**.</p>
+            <p class="text-lg leading-relaxed">Mon objectif est de **acquérir une solide expérience dans le développement web mobile et de contribuer de manière significative aux projets innovants**.</p>
+        </section>
+
+        <section id="skills" class="bg-white p-8 rounded-xl shadow-lg mb-8 transition-all duration-300 ease-in-out hover:shadow-xl">
+            <h3 class="text-3xl font-bold text-center mb-6 text-blue-700 border-b-2 border-blue-200 pb-4">Mes Compétences</h3>
+            <ul class="skill-list flex flex-wrap justify-center gap-4 mt-6">
+                <li class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-blue-600 hover:scale-105">HTML & CSS</li>
+                <li class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-blue-600 hover:scale-105">JavaScript</li>
+                <li class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-blue-600 hover:scale-105">Responsive Design</li>
+                <li class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-blue-600 hover:scale-105">Frameworks Mobile (ex: React Native, Flutter)</li>
+                <li class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-blue-600 hover:scale-105">Git & GitHub</li>
+                <li class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-blue-600 hover:scale-105">Communication</li>
+                <li class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-blue-600 hover:scale-105">Travail d'équipe</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="bg-white p-8 rounded-xl shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl">
+            <h3 class="text-3xl font-bold text-center mb-6 text-blue-700 border-b-2 border-blue-200 pb-4">Me Contacter</h3>
+            <p class="text-lg leading-relaxed text-center mb-4">N'hésitez pas à me contacter si vous souhaitez en savoir plus sur mon parcours ou si vous avez des opportunités intéressantes !</p>
+            <p class="text-lg leading-relaxed text-center">Email : <a href="mailto:bonnie.koddy@example.com" class="text-blue-600 hover:text-blue-800 hover:underline font-medium">bonnie.koddy@example.com</a></p>
+            <p class="text-lg leading-relaxed text-center">LinkedIn : <a href="https://www.linkedin.com/in/bonnie-koddy-votreprofil" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium">Votre profil LinkedIn</a></p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12 rounded-t-lg">
+        <div class="container mx-auto px-4">
+            <p class="text-sm">&copy; 2025 Bonnie Koddy. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
     
 </body>
 </html>
